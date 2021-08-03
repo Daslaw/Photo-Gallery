@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- CSS style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <body>
+  <section class="section-spacing bottom-none inverse-bg ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title text-center">
+            <h2> <span>Gallery</span></h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul id="filter-list">
+            <li class="filter active" data-filter="all">All</li>
+            <li class="filter" data-filter="1">LION</li>
+            <li class="filter" data-filter="2">HORSE</li>
+            <li class="filter" data-filter="3">TIGER</li>
+            <li class="filter" data-filter="4">ELEPHANT</li>
+            <li class="filter" data-filter="5">RHINO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-outer">
+      <ul class="gallery-items" style="padding: 0px; position: relative; height: 1000px;">
+        <!-- First Section -->
+            <li class="filtr-item" data-category="1" style="opacity: 1; transform: scale(1) translate3d(0px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+              <div class="gallery-inner">
+                <img src="./images/lion.jpg" alt="">
+                <div class="gallery-overlay">
+                  <a href="./images/lion.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+                </div>
+              </div>
+            
+            </li>
+          <!-- Second Section -->
+          <li class="filtr-item" data-category="2" style="opacity: 1; transform: scale(1) translate3d(312.25px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/horse.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/horse.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          </li>
+          <!-- Third Section  -->
+          <li class="filtr-item" data-category="4" style="opacity: 1; transform: scale(1) translate3d(630.5px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/elephant.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/elephant.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          </li>
+          <!-- Four Section  -->
+          <li class="filtr-item" data-category="3" style="opacity: 1; transform: scale(1) translate3d(945.7px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/tiger-2.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/tiger-2.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          </li>
+          <!-- Fifth Section  -->
+          <li class="filtr-item" data-category="3" style="opacity: 1; transform: scale(1) translate3d(0px, 315.25px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/tiger-3.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/tiger-3.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+
+          <!-- sixth Section  -->
+          <li class="filtr-item" data-category="5" style="opacity: 1; transform: scale(1) translate3d(315.25px, 315.25px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/rhino.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/rhino.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+
+          <!-- Seventh-Section  -->
+          <li class="filtr-item" data-category="3" style="opacity: 1; transform: scale(1) translate3d(630.5px, 315.25px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/leo.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/leo.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+
+          <!-- Eight-Section   -->
+          <li class="filtr-item" data-category="4" style="opacity: 1; transform: scale(1) translate3d(945.5px, 315.25px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/yak.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/yak.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          </li>
+          <!-- Nineth Section  -->
+          <li class="filtr-item" data-category="5" style="opacity: 1; transform: scale(1) translate3d(0px, 630.5px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/rhino-2.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/rhino-2.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+         <!-- Tenth Section  -->
+          <li class="filtr-item" data-category="1" style="opacity: 1; transform: scale(1) translate3d(315.25px, 630.5px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/lion-3.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/lion-3.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+
+          <!-- Eleventh section  -->
+          <li class="filtr-item" data-category="4" style="opacity: 1; transform: scale(1) translate3d(630.5px, 630.5px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/elephant.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/elephant.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+          <!-- Twelveth Section  -->
+          <li class="filtr-item" data-category="2" style="opacity: 1; transform: scale(1) translate3d(945.7px, 630.5px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-in-out 0ms; pointer-events: auto;">
+            <div class="gallery-inner">
+              <img src="./images/horse-2.jpg" alt="">
+              <div class="gallery-overlay">
+                <a href="./images/horse-2.jpg" class="venobox vbox-item" data-gall="gallery"> <i class="fa fa-picture-o"> </i> </a>
+              </div>
+            </div>
+          
+          </li>
+
+
+      </ul>
+
+    </div>
+
+  </section>
+  <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/jquery.filterizr.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
